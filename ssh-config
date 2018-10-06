@@ -8,3 +8,4 @@ cat .ssh/id_rsa.pub | ssh s@192.168.28.137 'cat >> .ssh/authorized_keys'
 
 exit
 
+ssh s@192.168.28.137
