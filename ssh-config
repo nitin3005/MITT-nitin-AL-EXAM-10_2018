@@ -1,0 +1,10 @@
+ssh-copy-id s@192.168.28.137
+
+ssh-keygen -t rsa
+
+ssh-s@192.168.28.137 mkdir -p .ssh
+
+cat .ssh/id_rsa.pub | ssh s@192.168.28.137 'cat >> .ssh/authorized_keys'
+
+exit
+
